@@ -37,7 +37,7 @@ pipeline {
                 script{
                     // if you want to use custom registry, use the first argument, which is blank in this case
                     // Harbor
-                    docker.withRegistry('http://211.43.13.1:40001', dockerCredentials){
+                    docker.withRegistry('https://211.43.13.1:40001', dockerCredentials){
                     // nexus
                     //docker.withRegistry('http://211.43.13.1:40010', dockerCredentials){
                         dockerImageVersioned.push()
